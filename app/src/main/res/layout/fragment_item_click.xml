@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/bg_layout"
+    tools:context=".presentation.user.hazratim.itemClick.ItemClickFragment">
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/titillium_web_bold"
+        style="@style/texts"
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+
+</ScrollView>

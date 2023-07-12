@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="jama.bookApp.onlinebook.presentation.admin.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_itemClickedFragment"
+            app:destination="@id/itemClickedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="jama.bookApp.onlinebook.presentation.admin.profil.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/getNameAndAuthorFragment"
+        android:name="jama.bookApp.onlinebook.presentation.admin.addBook.GetNameAndAuthorFragment"
+        android:label="fragment_get_name_and_author"
+        tools:layout="@layout/fragment_get_name_and_author" >
+        <action
+            android:id="@+id/action_getNameAndAuthorFragment_to_finishingFragment"
+            app:destination="@id/finishingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishingFragment"
+        android:name="jama.bookApp.onlinebook.presentation.admin.addBook.FinishingFragment"
+        android:label="fragment_finishing"
+        tools:layout="@layout/fragment_finishing" />
+    <fragment
+        android:id="@+id/isAudioAndMuslimBookFragment"
+        android:name="jama.bookApp.onlinebook.presentation.admin.addBook.IsAudioAndMuslimBookFragment"
+        android:label="fragment_is_audio_and_muslim_book"
+        tools:layout="@layout/fragment_is_audio_and_muslim_book" >
+        <action
+            android:id="@+id/action_isAudioAndMuslimBookFragment_to_getNameAndAuthorFragment"
+            app:destination="@id/getNameAndAuthorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemClickedFragment"
+        android:name="jama.bookApp.onlinebook.presentation.admin.home.ItemClickedFragment"
+        android:label="fragment_item_clicked"
+        tools:layout="@layout/fragment_item_clicked" >
+        <action
+            android:id="@+id/action_itemClickedFragment_to_readBookFragment"
+            app:destination="@id/readBookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readBookFragment"
+        android:name="jama.bookApp.onlinebook.presentation.admin.home.ReadBookFragment"
+        android:label="fragment_read_book"
+        tools:layout="@layout/fragment_read_book" />
+</navigation>

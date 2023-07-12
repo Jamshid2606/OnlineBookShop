@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/bg_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".presentation.admin.home.ItemClickedFragment">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <androidx.cardview.widget.CardView
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <ImageView
+                        android:id="@+id/imageBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/quran"/>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/name_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/texts"
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:text="O'tgan Kunlar"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/authorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/texts"
+                    android:fontFamily="@font/titillium_web_regular"
+                    android:textSize="22sp"
+                    android:text="Abdulla Oripov"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/countDownloads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/texts"
+                android:fontFamily="@font/titillium_web_bold"
+                android:text="32"
+                android:textSize="32dp"
+                android:layout_marginEnd="20dp"
+                />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/downloadImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_download_for_offline_24"
+                android:layout_marginEnd="80dp"
+                />
+            <Button
+                android:id="@+id/oqish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OQISH"
+                android:layout_gravity="center_vertical"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ScrollView
+            android:id="@+id/nested"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/downloadImage"
+            >
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/countDownloads"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/titillium_web_bold"
+                android:textColor="#3C3B3B"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:text="Roman XIX asr voqealarini oʻz ichiga olgan. Murakkab tarixiy hodisalar romanning bosh qahramonlari Otabek va Kumushbibining fojiaviy sevgi qissasi atrofida ifodalangan. Voqealar rivoji mahalliy hukmdorlarning hokimiyat uchun qonli kurashlari muhitida kechadi. Boshqa yirik epik asarlardagi kabi „Oʻtkan kunlar“da ham hikoyanavislikning koʻp planliligi, ikkilamchi sujetlar mavjudligi, ketma-ket avj oluvchi va fojiali yakun topuvchi voqealar bilan mavjud.Ilgʻor fikrlarni olgʻa suruvchi Otabek obrazi romanning gʻoyaviy va kompozitsion markazi hisoblanadi. U savdodagi eskirgan iqtisodiy munosabatlarga qarshi chiqib, oila va turmush muammolariga yangi qarashga amal qiladi. Adabiyotshunoslar Abdulla Qodiriy oʻz qahramoni nomidan oʻzining shaxsiy oʻy-fikrlarini soʻzlagan, deb bilishadi.Yozuvchi bir vaqtning oʻzida oʻzbek ayolining taqdirini ham kuzatib boradi. Ayrim anʼanalar, jumladan, koʻpxotinlik, Kumush va Zaynabning oʻrtasida oʻlimga olib boruvchi xusumatga sabab boʻladi. Yozuvchi goʻzal, Otabekka boʻlgan sevgi bilan ayrim qiyinchiliklarni yengib oʻtuvchi Kumush obrazini yaratadi. Biroq asar fojia bilan yakunlanadi: Kumushbibi kundoshi tomonidan zaharlab oʻldiriladi, Otabek esa vatanini himoya qilaman deb vafot etadi[4]."
+                />
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
